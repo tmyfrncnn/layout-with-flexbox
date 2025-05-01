@@ -23,7 +23,7 @@ ul {
     list-style:none;
 }
 
-li {
+header li {
     padding: 0 10px;
     text-decoration: underline;
 }
@@ -37,13 +37,6 @@ main {
     align-items: center;
 }
 
-.mission-img {
-    position: relative;
-    height: 800px;
-    width: 1200px;
-    opacity: 0.5;
-}
-
 .mission {
     display: flex;
     align-items: center;
@@ -51,6 +44,14 @@ main {
     width: 1200px;
     flex-direction: column;
 }
+
+.mission-img {
+    position: relative;
+    height: 800px;
+    width: 1200px;
+    opacity: 0.5;
+}
+
 
 .mission h4 {
     margin-top: 0;
@@ -65,13 +66,18 @@ main {
     align-items: center;
 }
 
-.featured-tea-img-1 {
+.featured-tea-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin-top: 20px;
     gap: 1em;
+}
+
+.featured-tea-img img {
+    height: 200px;
+    width: 300px;
 }
 
 .tea-cups {
@@ -82,24 +88,67 @@ main {
     margin: 10px 0 20px;
 }
 
-.featured-tea-img-1 img {
-    height: 200px;
-    width: 300px;
-}
-
-.featured-tea-img-2 img {
-    height: 200px;
-    width: 300px;
-}
 
 /* Location */
-.location-img {
-    background-image: url("assets/img-locations-background.webp");
+
+.location {
+    background-image: url(assets/img-locations-background.webp);
     background-repeat: no-repeat;
-    position: relative;
-    height: 500px;
-    opacity: 0.5;
     background-size: cover;
     background-position: center;
+    padding: 40px 145px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
     margin: 0 145px;
+    }
+
+.location h2 {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 15px 0;
+}
+
+.location-details {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    background-color: transparent;
+}
+
+.location1,
+.location2,
+.location3 {
+    width: 300px;
+    padding: 0 0 10px 0;
+    line-height: 70px;
+    list-style: none;
+}
+
+.location1 h3 {
+    margin: 0 0 auto 0;
+    text-decoration: none;
+}
+
+.location2 h3 {
+    margin: 0 0 auto 0;
+    text-decoration: none;
+}
+
+.location3 h3 {
+    margin: 0 0 auto 0;
+    text-decoration: none;
+}
+
+.contact {
+    height: 200px;
+}
+
+footer p {
+    text-align: left;
+    margin-left: 20px;
 }
